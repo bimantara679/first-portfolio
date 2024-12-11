@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+    <!-- Google Font -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">Bimantara</div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <nav id="toggle-nav">
+        <div class="logo">Bimantara</div>
+        <div class="toggle-menu">
+          <div class="toggle-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+        <article id="profile">
+          <div class="article-image">
+            <img src="img/profile-3.png" alt="Bimantara Profile Picture" />
+          </div>
+          <div class="article-text">
+            <p class="article-text-p1">Hello, I'm</p>
+            <h1 class="title">Bimantara</h1>
+            <p class="article-text-p2">Frontend Developer</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2">Download CV</button>
+              <button
+                class="btn btn-color-1"
+                onclick="location.href='./#contact'"
+              >
+                Youtube
+              </button>
+            </div>
+          </div>
+        </article>
+        <article id="about">
+          <p class="article-text-p1">Get to Know More</p>
+          <h1 class="title">About Me</h1>
+          <div class="section-container">
+            <div class="article-image">
+              <img
+                src="img/about-2.png"
+                alt="Profile Picture"
+                class="about-image"
+              />
+            </div>
+            <div class="about-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <img
+                    src="img/experience.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <h3>Experience</h3>
+                  <p>1+ years <br />Frontend Development</p>
+                </div>
+                <div class="details-container">
+                  <img
+                    src="img/education.png"
+                    alt="Education Icon"
+                    class="icon"
+                  />
+                  <h3>Education</h3>
+                  <p>B.Sc. Bachelors Degree</p>
+                </div>
+              </div>
+              <div class="text-container">
+                <p>
+                  I hold a Bachelor's degree in Computer Science with skills in
+                  programming, software development, and problem-solving. I'm
+                  passionate about using technology to solve real-world
+                  challenges and continuously expanding my knowledge in the
+                  field.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="img/arrow.png"
+            alt="Arrow Icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+          />
+        </article>
+        <article id="experience">
+          <p class="article-text-p1">Explore My</p>
+          <h1 class="title">Experience</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>HTML</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </div>
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>CSS</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </div>
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>SASS</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>JavaScript</h3>
+                      <p>Basic</p>
+                    </div>
+                  </div>
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>TypeScript</h3>
+                      <p>Basic</p>
+                    </div>
+                  </div>
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Material UI</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience Icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>PostgreSQL</h3>
+                      <p>Basic</p>
+                    </div>
+                  </div>
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Node JS</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Express JS</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                  <div class="check-skill">
+                    <img
+                      src="img/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Git</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="img/arrow.png"
+                alt="Arrow Icon"
+                class="icon arrow"
+                onclick="location.href='./#projects'"
+              />
+            </div>
+          </div>
+        </article>
+        <article id="projects">
+          <p class="article-text-p1">Browse My Recent</p>
+          <h1 class="title">Projects</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="img/ecommerce.png"
+                    alt="E Commerce Project"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                  Project E-Commerce
+                </h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="img/e-learning.png"
+                    alt="E-Learning Project"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                  Project E-Learning
+                </h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="img/workout.png"
+                    alt="Workout App Project"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                  Workout App Project
+                </h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <button class="floating-button" id="toggleContact">
+          <i class="fa-regular fa-address-book"></i>
+        </button>
+      </div>
+      <aside id="contactHide">
+        <div class="contact-wrap" id="contact">
+          <p class="article-text-p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="img/email.png"
+                alt="Email Icon"
+                class="icon contact-icon email-icon"
+              />
+              <p>
+                <a href="mailto:bimantara153@gmail.com"
+                  >Bimantara153@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="img/linkedin.png"
+                alt="LinkedIn Icon"
+                class="icon contact-icon email-icon"
+              />
+              <p>
+                <a href="https://www.linkedin.com">Ichsanabdilahbimantara</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <nav class="footer-nav">
+        <div class="nav-links-container">
+          <ul class="nav-list-footer">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">Profile</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Bimantara. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
